@@ -12,6 +12,8 @@
 
 // var title = "Harry Potter";
 // var ...
+var title = "Destiny";
+var pages = 636;
 
 
 
@@ -19,20 +21,20 @@
 // condensed the book, use a built in math operator to make the page count a quarter
 // of what it currently is 
 
-
+pages = 536;
 
 // Initialize a new variable "movie", but leave it undefined
 
-
+var movie;
 
 // Create a variable named "sequel", and assign it to a be a sequel of your
 // book (made up or not!). Your sequel must make use of your "title" variable from above
-
+var sequel = title + " sequel is Secrets";
 
 
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the book you chose is your favorite book or not
-
+var isFavorite = false;
 
 
 
@@ -41,7 +43,7 @@
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
 
-
+var isShortStory = (pages < 25) ? true : false;
 
 //------------------------- Conditionals -------------------------//
 
@@ -49,7 +51,11 @@
 // Express the following in code: If the variable "pages" is less than 1000 log
 // the statement 'I could read that in a day!', otherwise, log the statement 
 // 'Ok, maybe I could read that in a day and a half'
-
+if (pages < 1000) {
+    console.log ("I could read that in a day!");
+} else {
+    console.log("Ok, maybe I could read that in a day and a half");
+}
 
 
 // Express the following in code: If the variable "isFavorite" is true,
@@ -57,22 +63,26 @@
 // statement 'I recently read the [title] book'. In either case, the value stored in
 // the "title" variable should be included in the logged statement.
 
-
+if (isFavorite == true) {
+    console.log ("My favourite book is " + title + "!");
+} else {
+    console.log (" I recently read the " + title + " book");
+}
 
 //------------------------- Arrays -------------------------//
 
 
 // Create a new variable "books" and assign it to an Array of 5 different
 // book titles, represented by their names as Strings.
-
+var books = ["Book 1", "Book 2", "Book 3", "Monster of the Week", "Masks"];
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-
+books[2];
 
 // Create a new variable "belowTwoHundred" and assign it to an Array of 12
 // different numbers below two hundred.
-
+var belowTwoHundred = []
 
 // Write the code to access the 5th element of the array, using bracket notation.
 
